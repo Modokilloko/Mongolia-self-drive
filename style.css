@@ -1,127 +1,103 @@
-/* Resetting default styles */
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and general styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
     color: #333;
-    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
-h1, h2, h3 {
-    color: #2d3e50;
-}
-
-/* Header / Navigation */
 header {
-    background-color: #2d3e50;
-    color: white;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-/* Hero Section */
-.hero {
-    background: url('https://example.com/mongolia.jpg') no-repeat center center/cover;
+    background: url('images/header-bg.jpg') no-repeat center center/cover;
+    padding: 100px 0;
     color: white;
     text-align: center;
-    padding: 100px 20px;
 }
 
-.hero h1 {
-    font-size: 3rem;
+header h1 {
+    font-size: 3.5rem;
     margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-}
-
-.cta-btn {
-    background-color: #ff5722;
-    color: white;
-    padding: 10px 20px;
+header p {
     font-size: 1.2rem;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.cta-btn:hover {
-    background-color: #e64a19;
-}
-
-/* Section Content */
-.section-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.service-item {
-    margin-bottom: 30px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-form label {
-    margin: 10px 0 5px;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 80%;
-    padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #2d3e50;
+button {
+    background-color: #ff6347;
     color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
-.contact-form button:hover {
-    background-color: #1a2b3c;
+button:hover {
+    background-color: #e5533d;
 }
 
-/* Footer */
-footer {
+section {
+    padding: 50px 20px;
     text-align: center;
-    padding: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.features div {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.features img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
     background-color: #333;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
